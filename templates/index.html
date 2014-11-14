@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="description" content="Supermecardo" />
+	<meta name="viewport" content="width-device-width, initial-scale=1" />
+
+	<title>Bem vindo ao twtter-UFBA</title>
+	
+	<link rel="stylesheet" type="text/css" href="/static/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="/static/bootstrap-responsive.css">
+	<link rel="stylesheet" type="text/css" href="/static/style.css">
+</head>
+
+<body>
+
+	<div class="container-fluid" >
+		<div class="espaco">
+			<div class="front-welcome-text centro">
+				<h2>Bem vindo ao Twitter-UFBA</h2>	
+			</div>
+		</div>
+
+		<div class="container-fluid">
+			<div class="row-fluid">		
+				<div class="tabela">
+					<div class="front-signin js-front-signin">	
+						<form class="sigin-in" method="POST" action="/login">	
+							<h2 class="form-signin-heading centro"> Login </h2>	
+							<input type="text" placeholder="nome" name="nome"/>		
+							<input type="password" placeholder="senha" 	name="senha"/>	
+
+							<button type="submit" class="btn btn-lg btn-primary btn-block centro3">Login</button> 
+								<!--(submit btn primary-btn flex-table-btn js-submit)   
+								 (btn btn-lg btn-primary btn-block)  ENTRAR!	-->
+							<p class="form-signin-heading centro"> Ainda nao e usuario, cadastre-se </p>		 
+						</form>     
+						<a class="centro4" href="/cadastro"><button  type="submit" class="btn btn-lg btn-primary btn-block centro3 ">cadastro</button></a> 	 
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+	</div>	
+
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+
+</body>
+</html>

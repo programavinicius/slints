@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="description" content="Supermecardo" />
+	<meta name="viewport" content="width-device-width, initial-scale=1" />
+
+	<title>cadastre-se no twtter-UFBA</title>
+	
+	<link rel="stylesheet" type="text/css" href="/static/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="/static/bootstrap-responsive.css">
+	<link rel="stylesheet" type="text/css" href="/static/style.css">
+</head>
+
+<body>
+
+	<div class="container-fluid" >
+		<div class="espaco">
+			<div class="front-welcome-text centro">
+				<h2>Bem vindo ao Twitter-UFBA</h2>	
+			</div>
+		</div>
+
+		<div class="container-fluid">
+			<div class="row-fluid">	
+				<div class="tabela">
+					<div class="front-signin js-front-signin">	
+						<form class="sigin-in" method="POST" action="/cadastrar">	
+							<h2 class="form-signin-heading centro"> Cadastre-se </h2>	
+							<input type="text" placeholder="nome" name="nome" required/>		
+							<input type="password" placeholder="senha" 	name="senha" required/>	
+							<input type="email" placeholder="email" 	name="email" required/>	
+
+							<button type="submit" class="btn btn-lg btn-primary btn-block centro3"  onClick="return validar()">Cadastrar</button>        
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>	
+
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+
+</body>
+</html>

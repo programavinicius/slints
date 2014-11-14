@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="description" content="Supermecardo" />
+	<meta name="viewport" content="width-device-width, initial-scale=1" />
+
+	<title>twtter-UFBA</title>
+	
+	<link rel="stylesheet" type="text/css" href="/static/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="/static/bootstrap-responsive.css">
+	<link rel="stylesheet" type="text/css" href="/static/style.css">
+	<script type="text/javascript" src="/static/moment.min.js"></script>
+</head>
+
+<body>
+
+	<div class="container-fluid" >
+		<div class="espaco2">
+			<div class="front-welcome-text centro">
+				<h2>Faça suas postagens no Twitter-UFBA</h2>	
+			</div>
+		</div>
+
+		<div class="container-fluid">
+			<div class="row-fluid">	
+				<div class="span2 coluna">
+					<div id="imagem"></div>
+					<table cellspacing="0">	
+						<tbody>
+							<nav>
+								{% for informacao in informacao%} 
+									Logado como {{informacao[0]}}
+								{% endfor %}
+								<ul class="menu">  <!--MENU!-->
+									
+									<li><a href="/cliente">Home</a></li>                             
+									<li><a href="/logout">sair</a></li>
+									
+									
+									</div>
+								</ul>
+           					</nav>
+           				</tbody>	
+					</table>
+					</div>		 
+				</div>
+					<div class="span4 post">
+						<h2 class="form-signin-heading centro"> Postagens </h2>	
+						{% for mensagem in mensagem | reverse %}
+						<div class="row">	
+							<div class="col-md-6">
+								
+          						<p>{{mensagem[0]}}</p>
+								<p>postado {{mensagem[1]}}</p>
+								<!--<form method="GET" action="/deletar">
+									<label class="radio-inline">
+										<input type="submit" name="produto" placeholder="remover"/>
+									</label>
+								</form>-->
+							</div>	
+						</div>	
+						{% endfor %}	
+					</div>
+				
+			</div>
+		</div>
+
+	</div>	
+
+	<script type="text/javascript" src="/static/bootstrap.min.js"></script>
+
+</body>
+</html>
